@@ -1,0 +1,35 @@
+{
+	"name": "georgringer/news-gallery",
+	"keywords": [
+		"TYPO3",
+		"extension",
+		"news",
+		"gallery"
+	],
+	"authors": [
+		{
+			"name": "Georg Ringer",
+			"role": "Developer",
+			"homepage": "http://ringer.it"
+		}
+	],
+	"type": "typo3-cms-extension",
+	"description": "Add possibilities for galleries in a news record",
+	"homepage": "http://ringer.it",
+	"license": [
+		"GPL-2.0+"
+	],
+	"require": {
+		"georgringer/news": "^6.0",
+		"typo3/cms-core": "^7.6.13 || >=8.5.0 <9"
+	},
+	"autoload": {
+		"psr-4": {
+			"GeorgRinger\\NewsGallery\\": "Classes"
+		}
+	},
+	"replace": {
+		"news_gallery": "self.version",
+		"typo3-ter/news-gallery": "self.version"
+	}
+}
