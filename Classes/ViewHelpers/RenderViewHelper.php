@@ -68,15 +68,9 @@ class RenderViewHelper extends AbstractViewHelper implements CompilableInterface
         $files = $fileCollector->getFiles();
         $as = $arguments['as'];
 
-        if (VersionNumberUtility::convertVersionNumberToInteger(TYPO3_branch) >= VersionNumberUtility::convertVersionNumberToInteger('9.0')) {
-            $renderingContext->getVariableProvider()->add($as, $files);
-            $output = $renderChildrenClosure();
-            $renderingContext->getVariableProvider()->remove($as);
-        } else {
-            $renderingContext->getTemplateVariableContainer()->templateVariableContainer->add($as, $files);
-            $output = $renderChildrenClosure();
-            $renderingContext->getTemplateVariableContainer()->templateVariableContainer->remove($as);
-        }
+        $renderingContext->getVariableProvider()->add($as, $files);
+        $output = $renderChildrenClosure();
+        $renderingContext->getVariableProvider()->remove($as);
 
         return $output;
     }
