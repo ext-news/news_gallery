@@ -19,8 +19,8 @@ This extension provides an easy way to file collections to a news record. There 
 Requirements
 ~~~~~~~~~~~~
 
-- TYPO3 8.7
-- Extension "news" 6.0.0
+- TYPO3 8.7 - 9.5
+- Extension "news" 6.0.0-7.9.99
 
 Screenshots
 ~~~~~~~~~~~
