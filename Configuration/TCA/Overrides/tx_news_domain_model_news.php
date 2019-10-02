@@ -17,6 +17,7 @@ $columns = [
             'maxitems' => 10,
             'minitems' => 0,
             'size' => 2,
+            'default' => 0,
             'wizards' => [
                 'suggest' => [
                     'type' => 'suggest',
